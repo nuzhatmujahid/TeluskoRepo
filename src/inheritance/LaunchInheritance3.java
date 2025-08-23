@@ -5,6 +5,8 @@ public class LaunchInheritance3 {
         System.out.println("New class added");
          System.out.println("New Message from github");
          System.out.println("New Message from Eclipse");
+                 System.out.println("New Message from github for Eclipse");
+                         System.out.println("New Message from github for Eclipse2....");
 
     }
 }
