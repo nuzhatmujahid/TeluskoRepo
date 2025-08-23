@@ -1,5 +1,23 @@
 package source;
 
+
+class Parents{
+	
+	Parents disp() {
+		System.out.println("Inside Parents!");
+		Parents parent = new Parents();
+		return parent;
+	}
+}
+
+class Child{
+	Child disp() {
+		System.out.println("Inside Parents!");
+		Child child = new Child();
+		return child;
+	}
+}
+
 class Student{
 	private int id;
 	private String name;
