@@ -9,6 +9,9 @@ public class LaunchInheritance3 {
                          System.out.println("New Message from github for Eclipse2....");
 
                             System.out.println("New Message from VS code ....");
+                            System.out.println("*********** Eclipse");
+                            
+                            
 
     }
 }
