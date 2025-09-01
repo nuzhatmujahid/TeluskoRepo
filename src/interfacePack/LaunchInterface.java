@@ -10,6 +10,10 @@ interface Calc2{
 	void divide(int n1, int n2);
 }
 
+interface Calc3 extends Calc{
+	void show();
+}
+
 class myCalc implements Calc, Calc2{
 	public void add(int a, int b) {
 		System.out.println("Addition in myCal class : " +(a + b));
@@ -34,6 +38,33 @@ class myCalc1 implements Calc{
 	
 }
 
+class Parent{
+	void printAll() {
+		System.out.println("I will print everything..........");
+	}
+}
+
+class Child extends Parent implements Calc3{
+
+	@Override
+	public void add(int n1, int n2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int mul(int n1, int n2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
 public class LaunchInterface {
 
 	public static void main(String[] args) {
