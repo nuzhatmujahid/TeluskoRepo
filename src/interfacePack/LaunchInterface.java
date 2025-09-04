@@ -4,6 +4,21 @@ interface Calc{
 	void add(int n1, int n2);
 	int mul(int n1, int n2);
 	
+	default void defaultMethod() {
+		System.out.println("Default method in Calc");
+		privateMethod();
+
+	}
+	
+	static void staticMethod() {
+		System.out.println("Static method in Calc");	
+		
+	}
+	
+	private void privateMethod() {
+		System.out.println("Private method in Calc");	
+	}
+	
 }
 
 interface Calc2{
@@ -73,6 +88,9 @@ public class LaunchInterface {
 		c1.add(10, 2);
 		System.out.println("Multiplication in myCalc class : "+c1.mul(5, 6));
 		c1.divide(25, 5);
+		c1.defaultMethod();
+		Calc.staticMethod();
+		
 		System.out.println("\n---------------------------------------------------\n");
 		Calc c2 = new myCalc1();
 		c2.add(2, 25);
