@@ -28,6 +28,15 @@ public class Launch2DArray {
 			  } 
 		  }
 		  
+		  System.out.println("-----------------For each ------------------");
+
+		  for(int[] n : stud) {
+			  for(int m : n) {
+				  System.out.println("----- "+m);
+			  }
+			  System.out.println("=================");
+			  
+		  }
 	}
 
 }
