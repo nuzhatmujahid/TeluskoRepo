@@ -8,8 +8,11 @@ public class SwitchExample {
 		
 		//After java 14 ne switch syntax
 		int dayNum1 = 1;
-		switch(dayNum1){
-		case 1 -> System.out.println("-> Monday");
+		switch(dayNum1){   //comment
+		case 1 -> {
+			System.out.println("******** Multiple line *******");
+			System.out.println("-> Monday");
+		}
 			
 		case 2 -> System.out.println("-> Tuesday");
 		
